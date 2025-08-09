@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>nuessli.email</title>
+  <meta name="description" content="nuessli.email">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <style>
+    body{
+      min-height:100svh;
+      display:flex; align-items:center; justify-content:center;
+      background-color:#fff;
+      color:#000;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      padding: 2rem;
+    }
+    main{
+      max-width: 640px;
+      text-align:center;
+    }
+    .logo{
+      margin: 0 auto 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #0056b3;
+    }
+    .logo svg{
+      width: clamp(96px, 18vw, 144px);
+      height: auto;
+    }
+    h1{
+      font-size: clamp(3.5rem, 10vw, 6rem);
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      margin-bottom: 1.5rem;
+      white-space: nowrap;
+    }
+    .tld{
+      color: #0056b3;
+    }
+    details{
+      margin-top: 2rem;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      background: #fdfdfd;
+    }
+    summary{
+      padding: 0.75rem 1rem;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    summary::-webkit-details-marker{
+      display:none;
+    }
+    details p{
+      padding: 0 1rem 0.75rem;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #333;
+    }
+    footer{
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="logo" aria-hidden="true">
+      <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Briefumschlag">
+        <rect x="6" y="12" width="52" height="40" rx="6"/>
+        <path d="M10 18 L32 34 L54 18"/>
+        <path d="M10 46 L24 30" opacity=".9"/>
+        <path d="M54 46 L40 30" opacity=".9"/>
+      </svg>
+    </div>
+    <h1 class="p-name">nuessli<span class="tld">.email</span></h1>
+    <details>
+      <summary>Was bedeutet die .email Domain?</summary>
+      <p>
+        Die Top-Level-Domain <strong>.email</strong> ist eine generische Domain-Endung, die speziell für E-Mail-bezogene Adressen und Dienste entwickelt wurde. 
+        Sie ermöglicht eine klare, leicht merkbare und thematisch passende Web- oder E-Mail-Adresse – perfekt für persönliche oder geschäftliche Kommunikation.
+      </p>
+    </details>
+    <footer>
+      <small>© <span id="year"></span> Christian Nüssli</small>
+    </footer>
+  </main>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
