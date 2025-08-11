@@ -1,14 +1,20 @@
-# nuessli.email
+# 🚀 nuessli.email
 
-## About 
-This is just a repo for the landingpage nuessli.email. You can copy it and customize it with your .email domain.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
 
-You will find an explanation for users, what .email is and that it's not phising. Send this users the link to your webpage.
+Dies ist lediglich ein Repository für die Landingpage nuessli.email. Du kannst es kopieren und mit Ihrer .email-Domain anpassen.
 
-## Security for .email Domains
+Sie finden hier eine Erklärung für Benutzer, was .email ist und dass es sich nicht um Phishing handelt. Senden Sie diesen Benutzern den Link zu Ihrer Webseite.
 
-Also remember to setup your domain with DKIM/DMARC and SPF to work it properly and security.
+## 🔐 Sicherheit
 
-## Deployment
+Denken Sie auch daran, Ihre Domain mit DKIM/DMARC und SPF einzurichten, damit sie ordnungsgemäß und sicher funktioniert.
 
-It's just one HTML file, you can upload it to any webserver.
+## 📜 Lizenz
+Dieses Projekt steht unter der **MIT License** – siehe [LICENSE.md](LICENSE.md) für Details.
+
+## 🌎 Localization
+
+> [!NOTE]  
+> This site is only in german available but can be used in any language you want.
+> Translate the german text with a translation tool of your choice.
